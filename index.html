@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>STUDIO TF2 ANIME</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li id="acceuilhfr">ACCEUIL</li>
+			<li id="mangahrf">MANGA</li>
+			<li id="jeuxhrf">JEUX</li>
+			<li id="contactezhrf">NOUS CONTACTEZ</li>
+		</ul>
+		
+	</nav>
+
+	<header>
+		
+		<h1><span class="a">STUDIO</span><span class="b"> TF2 ANIME</span></h1>
+		<div>
+			<img src="img\ban\kampfer\kampfer.jpg">
+			<img src="img\ban\Megu Miruku\MeguMilk.jpg">
+			<img src="img\ban\kampfer\kampfer.jpg">
+			<img src="img\ban\Megu Miruku\MeguMilk.jpg">
+
+		</div>
+		
+	</header>
+
+	<section>
+		<span id="section">
+		<p>
+			Ceci est un site pour les membres des STUDIO TF2 Anime pour le moment,</p>
+		<p>voici les projets en cours ,</p>
+		<p>nous avons des projets doublages d'anime VF</p>
+		<p>et </p>
+		<p>traduction francaise de scan TG .</p>
+		</span>
+		<div id="manga">
+			<a href="">ANIME</a>
+			<a href="">SCAN</a>
+			
+		</div>
+		<div id="jeux">
+			<a href="">Quizz manga</a>
+			
+			
+		</div>
+		<div id="contactez">
+			<a href="">MAIL</a>
+			<a href="">TWEETER</a>
+			<a href="">FACEBOOK</a>
+			<a href="">DISCORD</a>
+
+			
+
+			
+		</div>
+		
+	</section>
+<script type="text/javascript" src="js\jquery\jquery.js"></script>
+<script type="text/javascript">
+	$("#manga").hide()
+	$("#jeux").hide()
+	$("#contactez").hide()
+	$("#mangahrf").click(function(){
+		$("#jeux").hide()
+		$("#section").hide()
+		$("#manga").show()
+		$("#contactez").hide()
+	
+}); 
+
+		$("#jeuxhrf").click(function(){
+		$("#manga").hide()
+		$("#section").hide()
+		$("#jeux").show()
+		$("#contactez").hide()
+	
+}); 
+		$("#acceuilhfr").click(function(){
+				$("#manga").hide()
+				$("#jeux").hide()
+				$("#section").show()
+				$("#contactez").hide()
+	
+});
+		$("#contactezhrf").click(function(){
+		$("#manga").hide()
+		$("#section").hide()
+		$("#jeux").hide()
+		$("#contactez").show()
+	
+}); 
+</script>
+</body>
+</html>
